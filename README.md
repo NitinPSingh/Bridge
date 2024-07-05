@@ -14,7 +14,9 @@ thus it is recommended to test in local machine
 
 - [Installation](#installation)
   - [Backend Setup](#backend-setup)
+  - [Unit testing](#backend-unit-testing)
   - [Frontend Setup](#frontend-setup)
+  - [API Docu](#api-documentation)
 
 
 
@@ -55,6 +57,7 @@ For testing Mocha ,Superset is used , run following command:
 ```
 npm test
 ```
+![Screenshot (660)](https://github.com/NitinPSingh/Bridge/assets/71833171/139e3674-48c9-470e-a298-f8f637598a3f)
 
 
 
@@ -87,6 +90,7 @@ npm start
 ```
 The frontend server should now be running on http://localhost:3000.
 
+![Screenshot (663)](https://github.com/NitinPSingh/Bridge/assets/71833171/a14207c9-fbc2-475d-9128-64d791ddf2df)
 
 
 ## API Documentation
