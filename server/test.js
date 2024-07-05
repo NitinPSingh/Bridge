@@ -1,11 +1,7 @@
-// const chai = require('chai');
-// const chaiHttp = require('chai-http');
-// const app = require('./index');
-
 import request from 'supertest';
 import { expect } from 'chai';
 import chaiHttp from 'chai-http'
-import {app} from './index.js'
+import app from './index.js'
 
 
 
@@ -29,7 +25,7 @@ describe('GET /tokens', () => {
 
 describe('POST /quotes', () => {
     it('should return a quote based on input parameters', function (done) {
-        this.timeout(5000); // Increase the timeout to 5 seconds
+        this.timeout(5000); 
 
         const params = {
             dstChainId: 1,
