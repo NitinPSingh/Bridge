@@ -1,7 +1,3 @@
-// const chai = require('chai');
-// const chaiHttp = require('chai-http');
-// const app = require('./index');
-
 import request from 'supertest';
 import { expect } from 'chai';
 import chaiHttp from 'chai-http'
