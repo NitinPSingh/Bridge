@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js", 
-    "build": "npm run build",
-    "test": "npx mocha" 
+    "start": "nodemon index.js",
+    "build": "echo \"Build process for the backend goes here\"",
+    "test": "npx mocha"
   },
   "keywords": [],
   "author": "",
