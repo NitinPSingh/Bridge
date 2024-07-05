@@ -155,6 +155,16 @@ function App() {
 
         return () => clearTimeout(delayDebounceFn)
     }, [tokenAmount])
+
+    const handleSelectedTo = (i) =>{
+        setSelectedTo(i)
+        setSelectedToTk({})
+    }
+
+    const handleSelectedFrom = (i) =>{
+        setSelectedFrom(i)
+        setSelectedFromTk({})
+    }
     return (
         <div
             className="App flex sm:my-[20vh] flex-col w-full justify-center items-center mx-auto sm:flex sm:max-w-[848px] sm:justify-center sm:space-x-[24px]">
@@ -162,13 +172,13 @@ function App() {
                 ? <SelectModal
                         closeModel={() => setModel(false)}
                         selected={selectedTo}
-                        setSelected={setSelectedTo}
+                        setSelected={handleSelectedTo}
                         setSelectedTkn={setSelectedToTk}
                         tokens={tokens}/>
                 : <SelectModal
                     closeModel={() => setModel(false)}
                     selected={selectedFrom}
-                    setSelected={setSelectedFrom}
+                    setSelected={handleSelectedFrom}
                     setSelectedTkn={setSelectedFromTk}
                     tokens={tokens}/>)}
             <div className='sm:flex items-center !m-[0px]'>
