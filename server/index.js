@@ -4,8 +4,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import bridgeRoutes from './routes/bridge.js'
 
-
-export const app = express();
+const app = express();
 const initializeExpress = () => {
     
     const port =3001
@@ -27,3 +26,5 @@ const initializeApp = async ()=> {
 };
   
 initializeApp();
+
+export default app;
