@@ -5,9 +5,9 @@ import cors from 'cors';
 import bridgeRoutes from './routes/bridge.js'
 
 
-
+export const app = express();
 const initializeExpress = () => {
-    const app = express();
+    
     const port =3001
    
     app.use(bodyParser.json({ limit: '30mb', extended: true }))

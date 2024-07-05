@@ -5,7 +5,10 @@ import { getQuotes, getSupportedTokens } from "../controllers/bridge.js";
 const router  = express.Router();
 
 router.get('/tokens',getSupportedTokens)
-router.get('/quotes',getQuotes)
-router.get('/params')
+router.post('/quotes',getQuotes)
+
 
 export default router;
+
+
+
