@@ -48,10 +48,12 @@ function App() {
         setMessage] = useState(null);
     const fetchData = async() => {
         const data = await ApiService.GetApi(uri, endpoints.getTokens, "")
-        setTokens(data.data.recommendedTokens);
+        setTokens(data?.data?.recommendedTokens);
     }
 
     const sortedQuotes = useMemo(() => {
+        console.log(quotes)
+        if(!quotes) return {}
         quotes.sort((a, b) => {
             const exchangeRateA = a.bridgeDescription.dstBridgeTokenAmount / a.srcQuoteTokenAmount;
             const exchangeRateB = b.bridgeDescription.dstBridgeTokenAmount / b.srcQuoteTokenAmount;
@@ -91,8 +93,7 @@ function App() {
                 ?.data
                     ?.errorMsg)
         } else {
-            setQuotes(resData
-                ?.data.routes)
+            setQuotes(resData?.data.routes || quotes)
             setMessage(null)
         }
 
