@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js", 
-    "build": "echo \"Build process goes here\"",
+    "build": "echo \"Build process goes here\" npm run build",
     "test": "npx mocha" 
   },
   "keywords": [],
