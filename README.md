@@ -73,6 +73,14 @@ Install the required dependencies:
 npm install
 ```
 
+change the local uri of backend 
+```
+services/api.js
+export const uri = "https://bridge-lilac.vercel.app" (comment)
+// export const uri = "http://localhost:3001" (uncomment)
+
+```
+
 Start the frontend development server:
 ```
 npm start
@@ -144,9 +152,5 @@ Example Response
   ]
 }
 ```
-## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
